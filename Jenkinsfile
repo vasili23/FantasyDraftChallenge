@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('Buzz bild') {
       steps {
-        sh './jenkins/test-all.sh'
+        sh 'echo "$pwd"'
       }
     }
 
     stage('buzz test') {
       steps {
-        sh './jenkins/build.sh'
+        sh 'echo "$uname"'
       }
     }
 
